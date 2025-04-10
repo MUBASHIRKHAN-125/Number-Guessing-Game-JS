@@ -37,7 +37,7 @@ if (userConfirm) {
         count++
     };
     if (count == 3) {
-        alert(`Game over! The correct number was ${ranNum}`);
+        alert(`Game over! The correct number was ${ranNum}. Unfortunately, you had 3 chances to guess.`);
     };
 
 };
