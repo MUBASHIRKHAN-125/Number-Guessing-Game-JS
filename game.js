@@ -15,24 +15,28 @@ if (userConfirm) {
             alert("Wow, you’re a legend! You guessed it like a pro!");
 
             break;
-            
+
         }
-    
+
         let absoluteNumber = Math.abs(userProm - ranNum)
-        
+
         if (userProm > ranNum && absoluteNumber <= 2) {
 
             alert("Oops! A little too high. Try going a bit lower!");
 
-        }else if (userProm < ranNum && absoluteNumber <= 2) {
+        } else if (userProm < ranNum && absoluteNumber <= 2) {
 
             alert("Oops! A little too low. Try going a bit higher!");
         }
 
         else {
-
-            alert("Sorry! wrong number");
-
+            if (count == 0) {
+                alert("Sorry! Wrong number. You have 2 chances left.");
+            } if (count == 1) {
+                alert("Sorry! Wrong number. You have 1 chance left.");
+            } if (count == 2) {
+                alert("Sorry! Wrong number. No chances left.");
+            }
         }
         count++
     };
