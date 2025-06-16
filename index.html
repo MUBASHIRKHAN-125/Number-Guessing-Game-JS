@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Reminder Guess Game</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="game.css">
 </head>
+
 <body>
-    <h1>GAME WITH JS REMINDER OPERATE</h1>
+    <div class="maincontainer">
+        <div class="container1">
+            <h1>Build <br>Game <br>JavaScript</h1>
+        </div>
+        <div class="container2">
+                <h2>Guess a number from 1 to 100</h2>
+                <h2 id="result"></h2>
+                <div class="btn">
+                    <input id="user" placeholder="Enter number (1-100)">
+                    <button>Check</button>
+                </div>
+                <h2 id="chances">You have 3 Chances!</h2>
+        </div>
+    </div>
     <script src="game.js"></script>
 </body>
+
 </html>
