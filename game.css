@@ -6,6 +6,7 @@
 
 body {
     background-color: #4b9aff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .maincontainer {
@@ -102,11 +103,31 @@ input {
         padding-left: 0px;
         padding: 20px;
     }
+
+    .container2 {
+        padding: 8px;
+    }
+
+    #result {
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width:380px) {
     .container2 {
         padding: 30px 20px;
+    }
+
+    #textShow {
+        font-size: 20px;
+    }
+
+    #chances {
+        font-size: 0.8rem;
+    }
+
+    #result {
+        font-size: 0.8rem;
     }
 }
 
@@ -128,6 +149,6 @@ input {
 
     #result,
     #chances {
-        font-size: 0.9rem;
+        font-size: 12px;
     }
 }

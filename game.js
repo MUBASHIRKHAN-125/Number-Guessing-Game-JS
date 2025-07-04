@@ -1,5 +1,7 @@
 
 let randumNum = Math.ceil((Math.random() * 100));
+console.log(randumNum);
+
 let count = 0;
 
 let chances = document.getElementById('chances');
@@ -9,7 +11,10 @@ let btn = document.querySelector('button')
 btn.addEventListener("click", () => {
 
     let userInput = document.getElementById('user').value;
-
+    if (!userInput) {
+        result.innerText = "Please enter a number...";
+        return;
+    }
     if (userInput < 1 || userInput > 100) {
 
         result.innerText = "Please enter a number between 1 and 100.";
@@ -18,10 +23,11 @@ btn.addEventListener("click", () => {
 
     }
     let userNumber = userInput;
+    result.innerText = "";
 
     if (userNumber == randumNum) {
-        result.innerText = "Wow, you’re a legend! You guessed it like a pro!";
-        chances.innerText = "You Win";
+        result.innerText = "🎉Wow, you’re a legend! You guessed it like a pro!";
+        chances.innerText = "You Win!✨";
         return;
     }
 
